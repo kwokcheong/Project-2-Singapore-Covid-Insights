@@ -7,29 +7,41 @@ section{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#scroll{
-    border:1px solid #000;
-    font-family:arial;
-    height:700px;
-    width:450px;
-    padding: 0;
-  }
- #scroll ul{
-    list-style:none;
-    max-height:641px;
-    max-width: 450px;
-    margin:0;
-    overflow:auto;
-    padding:0;
-    text-indent:10px;
-  }
-#scroll ul li{
-    line-height:25px;
-  }
+
+/*table*/
+
+#table_view{
+    width: 400px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    display: flex;
+    font-family: arial, sans-serif;
+}
+.fixed_header thead tr {
+    display: block;
+ }
+ 
+.fixed_header thead {
+background: rgb(118, 230, 127);
+color:#fff;
+}
+
+.fixed_header tbody{
+    display: block;
+    width:100%;
+    overflow: auto;
+    height: 665px;
+}
   
- #scroll li:nth-child(even){
-    background:#ccc;
+.fixed_header th, .fixed_header td {
+    padding: 5px;
+    text-align: left;
+    width: 140px;
   }
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
 
 #map{
     height: 700px;
@@ -66,3 +78,12 @@ section img{
     border-radius: 40px;
 }
 
+#hospitalBar{
+    display: flex;
+    width: 50%;
+}
+
+#hospitalGraph{
+    display: flex;
+    width: 50%;
+}

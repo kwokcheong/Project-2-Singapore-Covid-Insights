@@ -47,16 +47,31 @@
 <!-- MAP DIV  -->
 <section>
   <div id="map"></div>
-
-  <div id="scroll">
-    <h2 style="background-color: green;"> COVID-19 CASE </h2>
-    <ul id="cases">
-      <li>text</li>
-
-    </ul>
+  <!-- table -->
+  <div id="tableview">
+  <table class="fixed_header">
+    <thead>
+    <tr>
+      <th>Case Number</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Hospital</th>
+    </tr>
+    </thead>  
+    <tbody id="cases"> </tbody>
+  </table>
   </div>
 </section>
 
+<!-- Graph -->
+<section id="graphs">
+  <div id="hospitalBar" class="container">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div id="hospitalGraph" class="container">
+    <canvas id="myGraph"></canvas>
+  </div>
+</section>
 
 
 
@@ -71,6 +86,8 @@
     <!-- use folders, cdn is slower -->
     <!-- axios -->
     <script src="axios.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <!-- d3 first then cf -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js" integrity="sha256-m0QmIsBXcOMiETRmpT3qg2IQ/i0qazJA2miCHzOmS1Y=" crossorigin="anonymous"></script>
     <!-- cf -->
