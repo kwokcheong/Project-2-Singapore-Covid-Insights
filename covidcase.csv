@@ -1,0 +1,1761 @@
+Cases,Age,Gender,Hospital
+
+879 , 26, M, CGH
+
+878 , 34, M, SKH
+
+877 , 41, M, NTFGH
+
+876 , 53, F, NTFGH
+
+875 , 29, M, NTFGH
+
+874 , 25, M, NCID
+
+873 , 47, F, NCID
+
+872 , 39, F, NCID
+
+871 , 19, F, NCID
+
+
+870 , 54, M, NCID
+
+869 , 41, M, KTPH
+
+868 , 29, M, NTFGH
+
+867 , 36, F, NCID
+
+866 , 52, M, SKH
+
+865 , 36, M, NCID
+
+864 , 27, F, NCID
+
+863 , 49, M, NCID
+
+862 , 29, M, NCID
+
+861 , 25, F, NCID
+
+860 , 22, M, KTPH
+
+859 , 41, M, NCID
+
+858 , 35, F, NCID
+
+857 , 20, M, SKH
+
+856 , 32, M, CGH
+
+855 , 88, M, NCID
+
+854 , 43, M, KTPH
+
+853 , 20, M, NCID
+
+852 , 31, M, SGH
+
+851 , 40, F, SGH
+
+850 , 37, M, CGH
+
+849 , 34, F, NUH
+
+848 , 41, F, NUH
+
+847 , 42, M, KTPH
+
+846 , 68, M, NUH
+
+845 , 38, F, KKH
+
+844 , 47, F, CGH
+
+843 , 68, F, NCID
+
+842 , 30, M, NCID
+
+841 , 21, F, NCID
+
+840 , 52, F, NCID
+
+839 , 57, F, NCID
+
+838 , 42, F, NCID
+
+837 , 68, F, NCID
+
+836 , 43, M, NCID
+
+835 , 68, F, NCID
+
+834 , 34, M, NCID
+
+833 , 69, M, NCID
+
+832 , 52, M, KTPH
+
+831 , 22, M, NCID
+
+830 , 61, F, NCID
+
+829 , 34, M, KTPH
+
+828 , 47, M, NUH
+
+827 , 27, F, NUH
+
+826 , 48, M, SKH
+
+825 , 36, M, NTFGH
+
+824 , 33, F, NCID
+
+823 , 43, M, NCID
+
+822 , 22, M, SGH
+
+821 , 35, M, NCID
+
+820 , 55, F, NCID
+
+819 , 35, F, KKH
+
+818 , 22, F, NCID
+
+817 , 43, M, NTFGH
+
+816 , 36, F, NCID
+
+815 , 21, F, NCID
+
+814 , 61, M, KTPH
+
+813 , 29, F, SGH
+
+812 , 25, F, NCID
+
+811 , 12, F, NUH
+
+810 , 22, F, CGH
+
+809 , 37, M, SKH
+
+808 , 44, M, NTFGH
+
+807 , 21, M, CGH
+
+806 , 25, M, NCID
+
+805 , 32, M, NCID
+
+804 , 21, F, NCID
+
+803 , 23, M, KTPH
+
+802 , 28, F, NTFGH
+
+801 , 39, M, CGH
+
+800 , 22, M, CGH
+
+799 , 39, M, KTPH
+
+798 , 29, F, NCID
+
+797 , 35, F, NCID
+
+796 , 26, M, NCID
+
+795 , 18, M, NCID
+
+794 , 22, F, NCID
+
+793 , 23, F, NCID
+
+792 , 50, F, NCID
+
+791 , 40, F, NCID
+
+790 , 60, M, NCID
+
+789 , 50, F, NCID
+
+788 , 57, F, NCID
+
+787 , 40, M, NCID
+
+786 , 51, M, NCID
+
+785 , 31, M, NCID
+
+784 , 23, F, NCID
+
+783 , 19, F, NCID
+
+782 , 21, F, NCID
+
+781 , 43, F, KTPH
+
+780 , 50, F, NCID
+
+779 , 55, F, NCID
+
+778 , 21, F, NCID
+
+777 , 29, M, NCID
+
+776 , 35, M, SKH
+
+775 , 29, M, SKH
+
+774 , 24, F, SKH
+
+773 , 55, F, NCID
+
+772 , 43, M, NCID
+
+771 , 30, M, NCID
+
+770 , 47, M, NCID
+
+769 , 44, M, NTFGH
+
+768 , 42, M, SGH
+
+767 , 28, M, NCID
+
+766 , 50, M, NCID
+
+765 , 31, M, NCID
+
+764 , 51, M, NCID
+
+763 , 21, F, NUH
+
+762 , 21, M, NUH
+
+761 , 36, F, NUH
+
+760 , 64, M, KTPH
+
+759 , 1, F, NUH
+
+758 , 23, M, NTFGH
+
+757 , 22, F, CGH
+
+756 , 42, M, NCID
+
+755 , 25, M, NCID
+
+754 , 22, M, NCID
+
+753 , 24, M, SKH
+
+752 , 70, F, SKH
+
+751 , 71, M, SKH
+
+750 , 22, F, NCID
+
+749 , 24, F, KTPH
+
+748 , 36, F, KTPH
+
+747 , 51, M, NCID
+
+746 , 38, M, KKH
+
+745 , 36, F, KTPH
+
+744 , 40, F, CGH
+
+743 , 69, M, NCID
+
+742 , 39, M, SKH
+
+741 , 42, F, SKH
+
+740 , 25, M, CGH
+
+739 , 30, F, NUH
+
+738 , 57, F, NTFGH
+
+737 , 28, M, NTFGH
+
+736 , 43, M, NCID
+
+735 , 29, F, SGH
+
+734 , 31, F, NCID
+
+733 , 52, M, NCID
+
+732 , 23, F, CGH
+
+731 , 32, M, CGH
+
+730 , 26, M, NCID
+
+729 , 53, M, SGH
+
+728 , 22, M, CGH
+
+727 , 59, M, NCID
+
+726 , 59, M, NCID
+
+725 , 23, M, NTFGH
+
+724 , 29, M, NCID
+
+723 , 27, F, NCID
+
+722 , 56, M, NCID
+
+721 , 68, F, NCID
+
+720 , 20, M, NCID
+
+719 , 29, M, NCID
+
+718 , 33, M, NCID
+
+717 , 19, F, NCID
+
+716 , 67, F, NCID
+
+715 , 71, M, NCID
+
+714 , 27, F, NCID
+
+713 , 59, F, NCID
+
+712 , 38, F, NCID
+
+711 , 21, F, NCID
+
+710 , 28, M, NCID
+
+709 , 26, M, NCID
+
+708 , 13, F, KKH
+
+707 , 11, M, KKH
+
+706 , 6, F, KKH
+
+705 , 2, F, KKH
+
+704 , 19, M, SKH
+
+703 , 58, F, NTFGH
+
+702 , 61, M, NTFGH
+
+701 , 50, M, NUH
+
+700 , 55, F, NUH
+
+699 , 53, M, AH
+
+698 , 60, M, MEH
+
+697 , 57, F, MEH
+
+696 , 54, M, SGH
+
+695 , 1, F, KKH
+
+694 , 41, M, NCID
+
+693 , 30, F, NCID
+
+692 , 67, F, NCID
+
+691 , 39, F, SGH
+
+690 , 31, F, CGH
+
+689 , 76, F, CGH
+
+688 , 76, F, CGH
+
+687 , 77, M, NCID
+
+686 , 37, M, SGH
+
+685 , 59, M, NCID
+
+684 , 21, M, NCID
+
+683 , 40, F, NCID
+
+682 , 22, M, NCID
+
+681 , 42, M, NCID
+
+680 , 19, M, NCID
+
+679 , 45, M, NCID
+
+678 , 71, M, NCID
+
+677 , 40, F, NCID
+
+676 , 29, M, NCID
+
+675 , 51, F, NCID
+
+674 , 59, M, NCID
+
+673 , 27, M, NCID
+
+672 , 24, F, NCID
+
+671 , 29, F, NCID
+
+670 , 34, M, NCID
+
+669 , 54, M, NCID
+
+668 , 31, F, NCID
+
+667 , 40, F, NCID
+
+666 , 32, F, SGH
+
+665 , 21, F, NCID
+
+664 , 38, F, NCID
+
+663 , 21, F, NCID
+
+662 , 42, M, NCID
+
+661 , 44, F, NCID
+
+660 , 22, F, NCID
+
+659 , 27, F, KKH
+
+658 , 28, M, NCID
+
+657 , 46, M, NCID
+
+656 , 30, M, NCID
+
+655 , 30, M, NCID
+
+654 , 66, F, AH
+
+653 , 25, F, SGH
+
+652 , 37, M, NCID
+
+651 , 31, M, NCID
+
+650 , 19, M, NCID
+
+649 , 36, M, NCID
+
+648 , 26, M, NCID
+
+647 , 46, F, KKH
+
+646 , 56, F, SGH
+
+645 , 27, M, SGH
+
+644 , 52, M, CGH
+
+643 , 51, F, NTFGH
+
+642 , 19, M, NTFGH
+
+641 , 55, M, NTFGH
+
+640 , 18, M, NTFGH
+
+639 , 40, M, NTFGH
+
+638 , 49, M, CGH
+
+637 , 24, M, NCID
+
+636 , 22, F, NCID
+
+635 , 21, F, NCID
+
+634 , 42, F, NCID
+
+633 , 35, M, NCID
+
+632 , 32, M, KTPH
+
+631 , 3, F, KKH
+
+630 , 43, F, SGH
+
+629 , 46, M, SGH
+
+628 , 23, M, NCID
+
+627 , 18, F, SKH
+
+626 , 44, F, NUH
+
+625 , 27, M, CGH
+
+624 , 48, F, NCID
+
+623 , 58, F, NCID
+
+622 , 27, F, NCID
+
+621 , 50, M, NCID
+
+620 , 18, F, NCID
+
+619 , 65, F, NCID
+
+618 , 29, F, NCID
+
+617 , 26, F, NCID
+
+616 , 39, M, NCID
+
+615 , 44, F, NCID
+
+614 , 62, F, NCID
+
+613 , 62, F, NCID
+
+612 , 22, F, NCID
+
+611 , 24, M, NCID
+
+610 , 25, F, NCID
+
+609 , 30, F, NCID
+
+608 , 18, F, NCID
+
+607 , 40, F, NCID
+
+606 , 55, M, NCID
+
+605 , 29, F, NCID
+
+604 , 36, F, NCID
+
+603 , 23, F, NCID
+
+602 , 56, F, NCID
+
+601 , 47, F, NCID
+
+600 , 66, M, NCID
+
+599 , 32, M, NCID
+
+598 , 35, F, SKH
+
+597 , 50, F, SKH
+
+596 , 35, M, NCID
+
+595 , 19, F, NCID
+
+594 , 23, F, NCID
+
+593 , 24, M, NCID
+
+592 , 24, M, NCID
+
+591 , 64, M, SGH
+
+590 , 21, F, NUH
+
+589 , 47, M, NCID
+
+588 , 62, M, NCID
+
+587 , 25, M, NCID
+
+586 , 51, M, NTFGH
+
+585 , 38, F, KKH
+
+584 , 37, F, NCID
+
+583 , 61, F, NCID
+
+582 , 3, F, KKH
+
+581 , 47, M, SGH
+
+580 , 35, F, SGH
+
+579 , 25, M, SGH
+
+578 , 11, M, KKH
+
+577 , 37, F, KTPH
+
+576 , 21, F, NUH
+
+575 , 28, M, NTFGH
+
+574 , 24, M, NCID
+
+573 , 45, M, CGH
+
+572 , 26, F, CGH
+
+571 , 52, M, MEH
+
+570 , 50, M, SKH
+
+569 , 22, F, NCID
+
+568 , 30, M, NCID
+
+567 , 70, M, CGH
+
+566 , 67, F, CGH
+
+565 , 46, F, NCID
+
+564 , 29, M, NCID
+
+563 , 25, M, NCID
+
+562 , 28, F, NTFGH
+
+561 , 30, M, NCID
+
+560 , 24, M, NCID
+
+559 , 22, M, NCID
+
+558 , 17, M, SGH
+
+557 , 68, M, NCID
+
+556 , 27, F, NCID
+
+555 , 24, M, NCID
+
+554 , 24, F, KTPH
+
+553 , 57, F, NCID
+
+552 , 21, F, NCID
+
+551 , 22, F, NCID
+
+550 , 24, F, NCID
+
+549 , 21, F, NCID
+
+548 , 44, F, NCID
+
+547 , 25, F, NCID
+
+546 , 27, M, NCID
+
+545 , 75, F, NCID
+
+544 , 55, M, NCID
+
+543 , 19, F, NCID
+
+542 , 23, M, NCID
+
+541 , 20, F, NCID
+
+540 , 23, M, NUH
+
+539 , 74, F, SGH
+
+538 , 50, M, NCID
+
+537 , 22, F, NCID
+
+536 , 86, F, MAH
+
+535 , 61, M, NTFGH
+
+534 , 34, M, NCID
+
+533 , 61, M, SKH
+
+532 , 44, M, SKH
+
+531 , 43, M, SKH
+
+530 , 35, M, NUH
+
+529 , 19, F, NTFGH
+
+528 , 50, M, KTPH
+
+527 , 44, M, KTPH
+
+526 , 22, F, NCID
+
+525 , 64, F, NCID
+
+524 , 61, M, NCID
+
+523 , 9, M, KKH
+
+522 , 45, F, NCID
+
+521 , 37, F, CGH
+
+520 , 71, M, 0
+
+519 , 44, M, SGH
+
+518 , 46, M, SGH
+
+517 , 37, M, NCID
+
+516 , 42, F, CGH
+
+515 , 24, M, NTFGH
+
+514 , 18, F, NCID
+
+513 , 21, M, NCID
+
+512 , 21, F, NCID
+
+511 , 53, M, KTPH
+
+510 , 52, F, KTPH
+
+509 , 53, M, NCID
+
+508 , 23, M, NCID
+
+507 , 29, F, NCID
+
+506 , 49, M, NCID
+
+505 , 24, M, NCID
+
+504 , 32, F, NCID
+
+503 , 26, M, NCID
+
+502 , 74, F, NCID
+
+501 , 65, M, NCID
+
+500 , 24, M, NCID
+
+499 , 27, F, NCID
+
+498 , 22, F, NCID
+
+497 , 63, F, NCID
+
+496 , 21, F, NCID
+
+495 , 29, F, NCID
+
+494 , 24, M, NCID
+
+493 , 23, F, NCID
+
+492 , 24, F, NCID
+
+491 , 22, M, NCID
+
+490 , 36, M, AH
+
+489 , 25, M, NCID
+
+488 , 36, M, SKH
+
+487 , 72, M, NCID
+
+486 , 22, M, NCID
+
+485 , 20, M, NCID
+
+484 , 21, M, NCID
+
+483 , 28, F, NCID
+
+482 , 35, M, NCID
+
+481 , 37, F, NCID
+
+480 , 52, F, KTPH
+
+479 , 35, F, NUH
+
+478 , 80, M, NCID
+
+477 , 44, M, NCID
+
+476 , 68, M, NCID
+
+475 , 22, F, NCID
+
+474 , 22, F, NCID
+
+473 , 25, M, NCID
+
+472 , 19, F, NCID
+
+471 , 22, M, NCID
+
+470 , 24, F, NCID
+
+469 , 43, M, NCID
+
+468 , 28, M, NCID
+
+467 , 20, F, NCID
+
+466 , 55, M, NCID
+
+465 , 41, M, NCID
+
+464 , 23, M, NTFGH
+
+463 , 64, M, NTFGH
+
+462 , 20, F, CGH
+
+461 , 49, F, NUH
+
+460 , 23, F, NUH
+
+459 , 67, M, AH
+
+458 , 20, F, NCID
+
+457 , 40, M, CGH
+
+456 , 24, M, CGH
+
+455 , 29, M, NCID
+
+454 , 47, F, NCID
+
+453 , 41, M, NCID
+
+452 , 22, F, NCID
+
+451 , 62, M, NCID
+
+450 , 44, M, NCID
+
+449 , 21, M, NCID
+
+448 , 21, M, NCID
+
+447 , 32, F, NCID
+
+446 , 26, F, NCID
+
+445 , 21, M, NCID
+
+444 , 44, M, NCID
+
+443 , 29, M, NUH
+
+442 , 48, F, NCID
+
+441 , 57, F, NCID
+
+440 , 55, M, NCID
+
+439 , 55, F, NCID
+
+438 , 55, F, SGH
+
+437 , 33, M, SGH
+
+436 , 46, M, NCID
+
+435 , 30, F, NCID
+
+434 , 36, M, NCID
+
+433 , 24, M, KTPH
+
+432 , 53, F, NCID
+
+431 , 58, M, NCID
+
+430 , 59, F, NCID
+
+429 , 31, F, NCID
+
+428 , 22, M, NCID
+
+427 , 39, M, NCID
+
+426 , 55, F, NCID
+
+425 , 21, F, NCID
+
+424 , 24, M, CGH
+
+423 , 24, M, NCID
+
+422 , 56, F, NCID
+
+421 , 23, M, NCID
+
+420 , 21, F, NCID
+
+419 , 45, M, NCID
+
+418 , 44, M, NCID
+
+417 , 18, F, NCID
+
+416 , 21, M, NCID
+
+415 , 64, F, NCID
+
+414 , 37, M, NCID
+
+413 , 29, M, NCID
+
+412 , 19, F, NCID
+
+411 , 30, M, NCID
+
+410 , 20, F, NCID
+
+409 , 23, F, NUH
+
+408 , 27, M, NUH
+
+407 , 25, M, NCID
+
+406 , 61, F, KTPH
+
+405 , 25, M, NCID
+
+404 , 28, M, NCID
+
+403 , 77, M, MEH
+
+402 , 22, F, MENH
+
+401 , 20, M, NCID
+
+400 , 56, M, NCID
+
+399 , 23, F, NCID
+
+398 , 57, M, KTPH
+
+397 , 43, M, NCID
+
+396 , 46, M, SKH
+
+395 , 54, M, NCID
+
+394 , 66, F, CGH
+
+393 , 21, M, NCID
+
+392 , 54, M, NCID
+
+391 , 53, M, NUH
+
+390 , 35, F, KKH
+
+389 , 36, F, KKH
+
+388 , 40, M, SKH
+
+387 , 30, F, NUH
+
+386 , 64, F, NTFGH
+
+385 , 22, M, CGH
+
+384 , 65, M, NCID
+
+383 , 42, F, NCID
+
+382 , 55, F, SGH
+
+381 , 27, F, SGH
+
+380 , 34, M, SGH
+
+379 , 62, M, NCID
+
+378 , 38, M, NCID
+
+377 , 59, M, NUH
+
+376 , 21, F, NCID
+
+375 , 25, F, NCID
+
+374 , 23, F, NCID
+
+373 , 51, M, NCID
+
+372 , 22, F, NCID
+
+371 , 22, M, NCID
+
+370 , 73, M, NCID
+
+369 , 34, M, NCID
+
+368 , 19, F, NCID
+
+367 , 25, M, NCID
+
+366 , 26, F, NCID
+
+365 , 33, M, NCID
+
+364 , 52, M, NCID
+
+363 , 49, M, SKH
+
+362 , 45, F, NCID
+
+361 , 32, M, NCID
+
+360 , 26, M, NCID
+
+359 , 45, F, NUH
+
+358 , 39, F, NCID
+
+357 , 41, M, MEH
+
+356 , 27, M, NCID
+
+355 , 38, M, NCID
+
+354 , 59, M, SGH
+
+353 , 23, M, NCID
+
+352 , 43, M, SGH
+
+351 , 51, M, SKH
+
+350 , 61, M, CGH
+
+349 , 21, M, CGH
+
+348 , 51, F, NUH
+
+347 , 27, M, KTPH
+
+346 , 59, M, KTPH
+
+345 , 30, M, NCID
+
+344 , 21, F, NCID
+
+343 , 20, F, NCID
+
+342 , 31, M, NCID
+
+341 , 31, M, NCID
+
+340 , 27, M, NCID
+
+339 , 66, M, NCID
+
+338 , 57, M, NCID
+
+337 , 31, M, NUH
+
+336 , 60, M, KTPH
+
+335 , 57, M, NCID
+
+334 , 32, F, NCID
+
+333 , 48, M, NCID
+
+332 , 36, F, NCID
+
+331 , 49, F, NCID
+
+330 , 67, M, NCID
+
+329 , 64, M, NCID
+
+328 , 63, F, NCID
+
+327 , 38, F, NCID
+
+326 , 33, M, NCID
+
+325 , 38, M, NCID
+
+324 , 45, M, NCID
+
+323 , 24, M, NCID
+
+322 , 46, F, AH
+
+321 , 65, F, NUH
+
+320 , 34, M, NCID
+
+319 , 67, F, SKH
+
+318 , 58, F, SKH
+
+317 , 29, M, SKH
+
+316 , 25, M, CGH
+
+315 , 57, M, NTFGH
+
+314 , 58, M, KTPH
+
+313 , 39, M, NCID
+
+312 , 30, M, NCID
+
+311 , 80, F, NCID
+
+310 , 58, M, NCID
+
+309 , 60, M, NCID
+
+308 , 59, M, NCID
+
+307 , 22, F, NCID
+
+306 , 56, M, NCID
+
+305 , 24, M, NCID
+
+304 , 27, F, NCID
+
+303 , 27, M, NCID
+
+302 , 49, F, KTPH
+
+301 , 63, M, NCID
+
+300 , 28, M, NCID
+
+299 , 29, M, NCID
+
+298 , 44, M, NCID
+
+297 , 31, M, NCID
+
+296 , 25, F, NCID
+
+295 , 55, M, NCID
+
+294 , 58, F, NCID
+
+293 , 30, M, NCID
+
+292 , 64, F, NCID
+
+291 , 52, M, NCID
+
+290 , 69, M, NCID
+
+289 , 62, M, NCID
+
+288 , 71, M, NCID
+
+287 , 26, M, KTPH
+
+286 , 54, M, NCID
+
+285 , 42, F, NCID
+
+284 , 32, M, NCID
+
+283 , 62, F, NCID
+
+282 , 76, M, NCID
+
+281 , 46, M, NCID
+
+280 , 21, F, NCID
+
+279 , 71, M, NCID
+
+278 , 48, F, NCID
+
+277 , 55, M, CGH
+
+276 , 21, M, NTFGH
+
+275 , 27, M, NTFGH
+
+274 , 50, M, NCID
+
+273 , 69, M, NUH
+
+272 , 65, M, NTFGH
+
+271 , 29, M, NTFGH
+
+270 , 62, F, NTFGH
+
+269 , 19, F, NCID
+
+268 , 64, M, NCID
+
+267 , 72, F, KTPH
+
+266 , 63, M, NCID
+
+265 , 25, F, NCID
+
+264 , 41, F, NCID
+
+263 , 52, F, NCID
+
+262 , 20, F, NCID
+
+261 , 30, M, NCID
+
+260 , 48, F, Farrer Park Hospital
+
+259 , 30, F, NCID
+
+258 , 47, M, NCID
+
+257 , 19, M, NUH
+
+256 , 32, F, NCID
+
+255 , 44, M, NCID
+
+254 , 43, F, NCID
+
+253 , 24, M, NCID
+
+252 , 66, M, NCID
+
+251 , 59, F, NCID
+
+250 , 28, M, NCID
+
+249 , 42, M, NCID
+
+248 , 23, F, NCID
+
+247 , 41, M, NCID
+
+246 , 39, M, SGH
+
+245 , 76, M, SGH
+
+244 , 53, M, NCID
+
+243 , 36, M, NCID
+
+242 , 64, F, NCID
+
+241 , 28, M, NCID
+
+240 , 27, M, NUH
+
+239 , 28, M, NCID
+
+238 , 83, F, NCID
+
+237 , 36, F, NCID
+
+236 , 30, F, NCID
+
+235 , 31, F, SGH
+
+234 , 86, M, SGH
+
+233 , 61, M, NCID
+
+232 , 65, F, SGH
+
+231 , 78, M, SGH
+
+230 , 38, F , NCID
+
+229 , 26, F, NCID
+
+228 , 67, M, CGH
+
+227 , 53, M, NUH
+
+226 , 49, M, NCID
+
+225 , 63, M, NCID
+
+224 , 50, M, NCID
+
+223 , 60, M, NCID
+
+222 , 41, M, NCID
+
+221 , 28, F, NCID
+
+220 , 53, M, NCID
+
+219 , 30, M, SKH
+
+218 , 55, F, NUH
+
+217 , 22, M, NCID
+
+216 , 30, M, NCID
+
+215 , 65, M, SGH
+
+214 , 29, M, NCID
+
+213 , 48, M, SKH
+
+212 , 64, M, NCID
+
+211 , 35, F, NCID
+
+210 , 56, M, NCID
+
+209 , 32, F, SGH
+
+208 , 26, F, NCID
+
+207 , 40, F, NCID
+
+206 , 33, F, NCID
+
+205 , 30, F, NCID
+
+204 , 32, M, SGH
+
+203 , 36, F, CGH
+
+202 , 44, M, SKH
+
+201 , 52, F, NTFGH
+
+200 , 62, F, NCID
+
+199 , 37, M, NCID
+
+198 , 61, F, NCID
+
+197 , 30, M, NCID
+
+196 , 73, F, NCID
+
+195 , 47, M, NCID
+
+194 , 24, F, NCID
+
+193 , 26, M, NCID
+
+192 , 32, M, NCID
+
+191 , 24, F, NCID
+
+190 , 53, M, NCID
+
+189 , 36, M, NCID
+
+188 , 53, M, KTPH
+
+187 , 48, M, NCID
+
+186 , 64, M, NCID
+
+185 , 34, M, NCID
+
+184 , 35, M, NCID
+
+183 , 29, M, NCID
+
+182 , 76, F, Gleneagles Hospital
+
+181 , 83, M, Gleneagles Hospital
+
+180 , 71, M, NCID
+
+179 , 66, F, NUH
+
+178 , 37, M, NTFGH
+
+177 , 26, M, NCID
+
+176 , 37, F, NCID
+
+175 , 44, M, NCID
+
+174 , 67, F, NCID
+
+173 , 31, M, NCID
+
+172 , 42, F, NCID
+
+171 , 27, M, NCID
+
+170 , 56, F, SGH
+
+169 , 40, M, KTPH
+
+168 , 47, M, SKH
+
+167 , 35, F, NTFGH
+
+166 , 55, F, NTFGH
+
+165 , 30, M, NCID
+
+164 , 57, F, NCID
+
+163 , 27, F, NCID
+
+162 , 28, M, NCID
+
+161 , 73, M, NCID
+
+160 , 5, M, KKH
+
+159 , 59, M, NTFGH
+
+158 , 53, F, NTFGH
+
+157 , 54, F, NCID
+
+156 , 50, F, NCID
+
+155 , 47, F, NCID
+
+154 , 52, M, NCID
+
+153 , 65, F, SGH
+
+152 , 65, M, SGH
+
+151 , 51, M, NCID
+
+150 , 53, F, NCID
+
+149 , 62, M, NCID
+
+148 , 67, F, NCID
+
+147 , 64, M, NCID
+
+146 , 64, F, NCID
+
+145 , 67, F, NCID
+
+144 , 58, F, NTFGH
+
+143 , 42, M, NUH
+
+142 , 26, M, NTFGH
+
+141 , 69, M, NTFGH
+
+140 , 62, F, NTFGH
+
+139 , 71, M, NTFGH
+
+138 , 26, M, NCID
+
+137 , 60, M, NCID
+
+136 , 36, M, NCID
+
+135 , 40, M, SGH
+
+134 , 56, F, NCID
+
+133 , 62, F, NUH
+
+132 , 37, F, NUH
+
+131 , 66, M, NTFGH
+
+130 , 66, M, NTFGH
+
+129 , 68, F, NTFGH
+
+128 , 70, M, NCID
+
+127 , 64, F, NCID
+
+126 , 77, M, NCID
+
+125 , 65, F, NCID
+
+124 , 37, F, NCID
+
+123 , 47, M, SKH
+
+122 , 64, F, NCID
+
+121 , 54, F, NCID
+
+120 , 62, F, NCID
+
+119 , 55, M, AH
+
+118 , 33, F, NUH
+
+117 , 52, F, NCID
+
+116 , 50, F, NCID
+
+115 , 62, F, NUH
+
+114 , 62, M, NUH
+
+113 , 42, M, NCID
+
+112 , 62, F, NCID
+
+111 , 43, M, NUH
+
+110 , 33, M, NCID
+
+109 , 70, M, SGH
+
+108 , 34, F, NTFGH
+
+107 , 68, F, NCID
+
+106 , 54, M, CGH
+
+105 , 49, M, NCID
+
+104 , 25, F, NCID
+
+103 , 37, F, NCID
+
+102 , 41, F, NTFGH
+
+101 , 61, M, NTFGH
+
+100 , 20, M, NCID
+
+99 , 27, M, NCID
+
+98 , 24, M, NCID
+
+97 , 44, F, NCID
+
+96 , 12, M, KKH
+
+95 , 44, M, NCID
+
+94 , 64, F, SGH
+
+93 , 38, M, NTFGH
+
+92 , 47, M, SKH
+
+91 , 58, F, NCID
+
+90 , 75, F, NCID
+
+89 , 41, M, NCID
+
+88 , 30, F, NCID
+
+87 , 32, M, NCID
+
+86 , 24, M, NTFGH
+
+85 , 36, M, NCID
+
+84 , 35, F, NCID
+
+83 , 54, M, NCID
+
+82 , 57, F, NTFGH
+
+81 , 50, M, NCID
+
+80 , 38, F, NUH
+
+79 , 35, F, NCID
+
+78 , 57, F, NCID
+
+77 , 35, M, NCID
+
+76 , 1, M, KKH
+
+75 , 71, F, NCID
+
+74 , 29, M, AH
+
+73 , 43, M, NCID
+
+72 , 40, M, NCID
+
+71 , 25, M, NCID
+
+70 , 27, F, NCID
+
+69 , 26, M, NCID
+
+68 , 79, F, NCID
+
+67 , 56, F, NCID
+
+66 , 28, M, NCID
+
+65 , 61, F, NCID
+
+64 , 50, M, NUH
+
+63 , 54, F, NCID
+
+62 , 44, F, SGH
+
+61 , 57, M, NUH
+
+60 , 51, F, NCID
+
+59 , 61, M, NCID
+
+58 , 55, M, NCID
+
+57 , 26, M, NCID
+
+56 , 30, M, NCID
+
+55 , 30, M, NCID
+
+54 , 55, F, NCID
+
+53 , 54, M, NCID
+
+52 , 37, M, NCID
+
+51 , 48, M, NCID
+
+50 , 62, M, NCID
+
+49 , 46, M, NUH
+
+48 , 34, M, NCID
+
+47 , 39, M, NCID
+
+46 , 35, M, NCID
+
+45 , 2, F, KKH
+
+44 , 37, M, KTPH
+
+43 , 54, M, SKH
+
+42 , 39, M, NCID
+
+41 , 71, M, NCID
+
+40 , 36, M, NCID
+
+39 , 51, M, NCID
+
+38 , 52, F, NCID
+
+37 , 53, M, NCID
+
+36 , 38, F, NCID
+
+35 , 64, M, SGH
+
+34 , 40, F, NCID
+
+33 , 39, F, SKH
+
+32 , 42, F, NCID
+
+31 , 53, M, CGH
+
+30 , 27, M, NCID
+
+29 , 41, M, NCID
+
+28 , 0, M, KKH
+
+27 , 45, M, NCID
+
+26 , 42, F, NCID
+
+25 , 40, M, NCID
+
+24 , 32, F, NCID
+
+23 , 17, M, NCID
+
+22 , 41, M, NCID
+
+21 , 44, F, SGH
+
+20 , 48, F, NCID
+
+19 , 28, F, SGH
+
+18 , 31, F, NCID
+
+17 , 47, F, NCID
+
+16 , 38, M, SGH
+
+15 , 47, F, NCID
+
+14 , 31, M, NCID
+
+13 , 73, F, NCID
+
+12 , 37, F, NCID
+
+11 , 31, F, NCID
+
+10 , 56, M, NCID
+
+9 , 56, M, NCID
+
+8 , 56, F, NCID
+
+7 , 35, M, NCID
+
+6 , 56, M, CGH
+
+5 , 56, F, NCID
+
+4 , 36, M, SKH
+
+3 , 37, M, SGH
+
+2 , 53, F, NCID
+
+1 , 66, M, SGH
+

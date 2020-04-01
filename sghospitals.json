@@ -1,0 +1,54 @@
+[
+    {
+        "name":"National University Hospital",
+        "coordinates":[1.2966,103.7764]
+    },
+    {
+        "name":"Alexandra Hospital",
+        "coordinates":[1.2866,103.8013]
+    },
+    {
+        "name":"Changi General Hospital",
+        "coordinates":[1.3402,103.9496]
+    },
+    {
+        "name":"Farrer Park Hospital",
+        "coordinates":[1.3131,103.8542]
+    },
+    {
+        "name":"Gleneagles Hospital",
+        "coordinates":[1.3073,103.8202]
+    },
+    {
+        "name":"KK Women's and Children's Hospital",
+        "coordinates":[1.318,103.7064]
+    },
+    {
+        "name":"Khoo Teck Puat Hospital",
+        "coordinates":[1.3108,103.8469]
+    },
+    {
+        "name":"Mount Elizabeth Hospital",
+        "coordinates":[1.3056,103.8355]
+    },
+    {
+        "name":"Mount Elizabeth Novena Hospital",
+        "coordinates":[1.3045,103.835083]
+    },
+    {
+        "name":"National Centre for Infectious Diseases",
+        "coordinates":[1.320278,103.850833]
+    },
+    {
+        "name":"Ng Teng Fong General Hospital",
+        "coordinates":[1.335043,103.743990]
+    },
+    {
+        "name":"Singapore General Hospital",
+        "coordinates":[1.2796,103.8359]
+    },
+    {
+        "name":"Sengkang General Hospital",
+        "coordinates":[1.3955,103.8934]
+    }
+]
