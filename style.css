@@ -11,7 +11,7 @@ section{
 /*table*/
 
 #table_view{
-    width: 400px;
+    width: 35%;
     table-layout: fixed;
     border-collapse: collapse;
     display: flex;
@@ -36,7 +36,7 @@ color:#fff;
 .fixed_header th, .fixed_header td {
     padding: 5px;
     text-align: left;
-    width: 140px;
+    width: 110px;
   }
 
 tr:nth-child(even) {
@@ -47,6 +47,7 @@ background-color: #dddddd;
     height: 700px;
     width: 65%;
     border-radius: 45px;
+    box-shadow: 0.1px 0.1px 15px 0.1px rgb(189, 188, 188);
 }
 
 .fa-1x {
@@ -77,6 +78,13 @@ section img{
     margin-left: 20px;
     border-radius: 40px;
 }
+
+#graphs{
+    margin-top:60px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
 
 #hospitalBar{
     display: flex;

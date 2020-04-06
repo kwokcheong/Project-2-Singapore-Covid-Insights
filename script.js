@@ -1,31 +1,25 @@
-//global variable
-
-//Hospital Information
+//global variable Hospital Information
 let hospitalarray = [];
 let hospitalCount = [0];
-
 let hospitalDict = [{
   name: "n/a",
   count: 0
 }];
 
-//first lets create the map object
+// 1. Map Leaflet
 let map = createMap("map", [1.3521, 103.8198], 13);
 
-//HOSPITAL JSON
-axios.get('sghospitals.json').then(function(hospitals){
-    let hospitalGroup = L.layerGroup();
-    for (let hospital of hospitals.data){
-        hospitalarray.push(hospital.abbrev);
-        hospitalDict[hospital.abbrev] = 0;
-        let marker = L.marker(hospital.coordinates).bindPopup(`<p>${hospital.name}</p>`);
-        marker.addTo(map);
-    }
-    //add to map    
-    map.layers(hospitalGroup).addTo(map);
+axios.get('sghospitals.json').then(function (hospitals) {
+  let hospitalGroup = L.layerGroup();
+  for (let hospital of hospitals.data) {
+    hospitalarray.push(hospital.abbrev);
+    hospitalDict[hospital.abbrev] = 0;
+    let marker = L.marker(hospital.coordinates).bindPopup(`
+        <h7>${hospital.name}</h7>`);
+    marker.addTo(map);
+  }
+  map.layers(hospitalGroup).addTo(map);
 });
-
-
 
 //this is an example of putting NUH in
 // let NUHCoord = [1.2966,103.7764];
@@ -39,15 +33,13 @@ axios.get('sghospitals.json').then(function(hospitals){
 // NUHCircle.bindPopup(`<p>National University Hopstital</p>`)
 
 
-//CSV HOSPITAL
-$(function(){
-
-axios.get('covidcase.csv').then(function(response){
-    csv().fromString(response.data).then(function(data){
-      //console.table(data);
-      for (let i in data){
-       hospitalDict[data[i].Hospital] = hospitalDict[data[i].Hospital] + 1;
-        $("#cases").append(`
+// 2. Update hospital array and dictionary counter and print table out
+axios.get('covidcase.csv').then(function (response) {
+  csv().fromString(response.data).then(function (data) {
+    //console.table(data);
+    for (let i in data) {
+      hospitalDict[data[i].Hospital] = hospitalDict[data[i].Hospital] + 1;
+      $("#cases").append(`
             <tr> 
              <td>${data[i].Cases} </td>
              <td>${data[i].Age} </td>
@@ -55,46 +47,62 @@ axios.get('covidcase.csv').then(function(response){
              <td>${data[i].Hospital} </td>
             </tr>
         `)
-      }
-      console.log(hospitalDict);
-      for (let x in hospitalarray){
-        hospitalCount[x] = hospitalDict[hospitalarray[x]];
-        //console.log(hospitalCount[x]);
-      }
-    });
+    }
+    console.log(hospitalDict);
+    for (let x in hospitalarray) {
+      hospitalCount[x] = hospitalDict[hospitalarray[x]];
+      //console.log(hospitalCount[x]);
+    }
   });
-})
-
-
-
-//My Chart Graphs
-
-let myChart = document.getElementById('myChart').getContext('2d');
-let PopChart = new Chart(myChart,{
-  type:'bar', //can be bar, horizontalbar, pie, line, doughnut,radar, polar area
-  data:{
-    labels: hospitalarray,
-    datasets:[{
-      label: 'Number of patients in each hospital',
-      data: hospitalCount,
-      backgroundColor: 'lightgreen'
-    }]
-  },
-  options:{}
 });
 
 
-let myGraph = document.getElementById('myGraph').getContext('2d');
+// 3. Chart.js
+$(function () {
+  setTimeout(function () {
+  }, 400);
 
-let dataChart = new Chart(myGraph,{
-  type:'line', //can be bar, horizontalbar, pie, line, doughnut,radar, polar area
-  data:{
-    labels: hospitalarray,
-    datasets:[{
-      label: 'Rate of increase in admission',
-      data: hospitalCount,
-      backgroundColor: 'violet'
-    }]
-  },
-  options:{}
+  let myChart = document.getElementById('myChart').getContext('2d');
+  let PopChart = new Chart(myChart, {
+    type: 'bar',
+    data: {
+      labels: hospitalarray,
+      datasets: [{
+        label: 'Number of patients in each hospital',
+        data: hospitalCount,
+        backgroundColor: 'lightgreen'
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+            autoSkip: true,
+            stepSize: 100
+          }
+        }]
+      }
+    }
+  });
+
+
+  let myGraph = document.getElementById('myGraph').getContext('2d');
+
+  let dataChart = new Chart(myGraph, {
+    type: 'line', //can be bar, horizontalbar, pie, line, doughnut,radar, polar area
+    data: {
+      labels: hospitalarray,
+      datasets: [{
+        label: 'Rate of increase in admission',
+        data: hospitalCount,
+        backgroundColor: 'violet'
+      }]
+    },
+    options: {}
+  });
+
+
+
+
 });
