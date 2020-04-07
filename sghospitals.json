@@ -63,5 +63,10 @@
         "name":"Sengkang General Hospital",
         "abbrev":"SKH",
         "coordinates":[1.3955,103.8934]
+    },
+    {
+        "name":"Mount Alexander Hospital",
+        "abbrev":"MAH",
+        "coordinates":[1.3419,103.8379]
     }
 ]

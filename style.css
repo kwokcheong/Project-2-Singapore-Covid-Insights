@@ -53,21 +53,18 @@ background-color: #dddddd;
 .fa-1x {
     font-size: 1.5rem;
     }
-    .navbar-toggler.toggler-example {
-    cursor: pointer;
-    }
-    .dark-blue-text {
-    color: #0A38F5;
-    }
-    .dark-pink-text {
-    color: #AC003A;
-    }
-    .dark-amber-text {
-    color: #ff6f00;
-    }
-    .dark-teal-text {
-    color: #004d40;
-    }
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+.dark-pink-text {
+color: #AC003A;
+}
+.dark-amber-text {
+color: #ff6f00;
+}
 
 .navbar-brand img{
     height: 80px;
@@ -79,19 +76,21 @@ section img{
     border-radius: 40px;
 }
 
-#graphs{
-    margin-top:60px;
-    height: 300px;
+#chart{
+    display:flex;
     flex-wrap: wrap;
+    height: 500px;
+    margin-top: 10px;
+    justify-content: space-around;
 }
 
-
-#hospitalBar{
-    display: flex;
-    width: 50%;
-}
-
-#hospitalGraph{
-    display: flex;
-    width: 50%;
+#graph{
+    display: block;
+    margin-top: 30px;
+    padding: 30px;
+    width: 48%;;
+    /*border: 0.5px solid rgb(172, 172, 172);*/
+    border-radius: 40px;
+    box-shadow: 0.1px 0.1px 15px 0.1px rgb(189, 188, 188);
+    text-align: center;
 }
