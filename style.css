@@ -93,4 +93,28 @@ section img{
     border-radius: 40px;
     box-shadow: 0.1px 0.1px 15px 0.1px rgb(189, 188, 188);
     text-align: center;
+    max-height: 500px;
 }
+
+
+/* Create Map pulser class which we will add to cicle*/
+.pulse {
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulse 3s infinite;
+    background-color: rgba(247, 0, 0, 0.233);
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0;
+    }
+    70% {
+        box-shadow: 0 0 0 13px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
