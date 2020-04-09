@@ -2,71 +2,121 @@
     {
         "name":"National University Hospital",
         "abbrev":"NUH",
+        "address": "5 Lower Kent Ridge Road Singapore 119074",
+        "hotline": "+65 6779 5555",
+        "NumberBed":  1250,
         "coordinates":[1.2966,103.7764]
     },
     {
         "name":"Alexandra Hospital",
         "abbrev":"AH",
+        "address": "378 Alexandra Rd, Singapore 159964",
+        "hotline": "+65 6472 2000",
+        "NumberBed": "",
         "coordinates":[1.2866,103.8013]
     },
     {
         "name":"Changi General Hospital",
         "abbrev":"CGH",
+        "address": "2 Simei Street 3, Singapore 529889",
+        "hotline": "+65 6788 8833",
+        "NumberBed": 1000,
         "coordinates":[1.3402,103.9496]
     },
     {
         "name":"Farrer Park Hospital",
         "abbrev":"Farrer Park Hospital",
+        "address": "1, #02-01 Farrer Park Station Rd, Connexion, 217562",
+        "hotline": "+65 6363 1818",
+        "NumberBed": 1000,
         "coordinates":[1.3131,103.8542]
     },
     {
         "name":"Gleneagles Hospital",
         "abbrev":"Gleneagles Hospital",
+        "address": "6A Napier Rd, Singapore 258500",
+        "hotline": "+65 6473 7222",
+        "NumberBed": 258,
         "coordinates":[1.3073,103.8202]
     },
     {
         "name":"KK Women's and Children's Hospital",
         "abbrev":"KKH",
+        "address": "Bukit Timah Rd, 100, Singapore 229899",
+        "hotline": "+65 6225 5554",
+        "NumberBed": 1000,
         "coordinates":[1.318,103.7064]
     },
     {
         "name":"Khoo Teck Puat Hospital",
         "abbrev":"KTPH",
+        "address": "5 Lower Kent Ridge Road Singapore 119074",
+        "hotline": "+65 6779 5555",
+        "NumberBed": 830,
         "coordinates":[1.3108,103.8469]
     },
     {
         "name":"Mount Elizabeth Hospital",
         "abbrev":"MEH",
+        "address": "5 Lower Kent Ridge Road Singapore 119074",
+        "hotline": "+65 6779 5555",
+        "NumberBed": 1000,
         "coordinates":[1.3056,103.8355]
     },
     {
         "name":"Mount Elizabeth Novena Hospital",
         "abbrev":"MENH",
+        "address": "3 Mount Elizabeth, Singapore 228510",
+        "hotline": "+65 6737 2666",
+        "NumberBed": 345,
         "coordinates":[1.3045,103.835083]
     },
     {
         "name":"National Centre for Infectious Diseases",
         "abbrev":"NCID",
+        "address": "16 Jln Tan Tock Seng, Singapore 308442",
+        "hotline": "+65 6779 5555",
+        "NumberBed": 330,
         "coordinates":[1.320278,103.850833]
     },
     {
         "name":"Ng Teng Fong General Hospital",
         "abbrev":"NTFGH",
+        "address": "1 Jurong East Street 21, Singapore 609606",
+        "hotline": "+65 6716 2000",
+        "NumberBed": 700,
         "coordinates":[1.335043,103.743990]
     },
     {
         "name":"Singapore General Hospital",
         "abbrev":"SGH",
+        "address": "Outram Rd, Singapore 169608",
+        "hotline": "+65 6222 3322",
+        "NumberBed": 1700,
         "coordinates":[1.2796,103.8359]
     },
     {
         "name":"Sengkang General Hospital",
         "abbrev":"SKH",
+        "address": "110 Sengkang E Way, Singapore 544886",
+        "hotline": "+65 6930 6000",
+        "NumberBed": 1000,
         "coordinates":[1.3955,103.8934]
     },
     {
         "name":"Mount Alexander Hospital",
         "abbrev":"MAH",
+        "address": "820 Thomson Rd, Singapore 574623",
+        "hotline": "+65 6347 6688",
+        "NumberBed": 319,
         "coordinates":[1.3419,103.8379]
+    },
+    {
+        "name":"Tan Tock Seng Hospital",
+        "abbrev":"TTSH",
+        "address": "11 Jln Tan Tock Seng, Singapore 308433",
+        "hotline": "+65 6256 6011",
+        "NumberBed": 1500,
+        "coordinates":[1.3214,103.8458]
     }
 ]

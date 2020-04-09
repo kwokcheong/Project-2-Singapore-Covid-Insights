@@ -14,17 +14,31 @@ let female = 0;
 //Indexes : 0-14, 15-24, 25-54, 55-64, 65>
 let ageArray = [0,0,0,0,0];
 
-
-// 1. Map Leaflet
+// Map Leaflet
 let map = createMap("map", [1.3521, 103.8198], 13);
 
+//Set up hospital Dictionary
+axios.get('sghospitals.json').then(function (hospitals) {
+    let hospitalGroup = L.layerGroup();
+    for (let hospital of hospitals.data) {
+      hospitalarray.push(hospital.abbrev);
+      hospitalDict[hospital.abbrev] = 0;
+    }
+});
+
+
+function drawMap(){
 axios.get('sghospitals.json').then(function (hospitals) {
   let hospitalGroup = L.layerGroup();
   for (let hospital of hospitals.data) {
-    hospitalarray.push(hospital.abbrev);
-    hospitalDict[hospital.abbrev] = 0;
     let marker = L.marker(hospital.coordinates).bindPopup(`
-        <h7>${hospital.name}</h7>`);
+        <h5>${hospital.name}</h5>
+        <p> COVID-19 Patients: ${hospitalDict[hospital.abbrev]} </p>
+        <p> Number of Beds: ${parseInt(hospital.NumberBed)}</p>
+        <p> Address: ${hospital.address} </p>
+        <p> Hotline: ${hospital.hotline} </p>
+
+        `);
     marker.addTo(map);
   }
   map.layers(hospitalGroup).addTo(map);
@@ -57,6 +71,7 @@ axios.get('sgclusters.json').then(function (clusters) {
     map.layers(clusterGroup).addTo(map);
   });
 
+}
   
 
 
@@ -112,6 +127,7 @@ axios.get('covidcase.csv').then(function (response) {
     console.log(genderCount);
     // todo: callback function
     drawCharts();
+    drawMap();
   });
     
 });
