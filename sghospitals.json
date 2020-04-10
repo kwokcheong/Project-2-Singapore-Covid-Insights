@@ -12,7 +12,7 @@
         "abbrev":"AH",
         "address": "378 Alexandra Rd, Singapore 159964",
         "hotline": "+65 6472 2000",
-        "NumberBed": "",
+        "NumberBed": "0",
         "coordinates":[1.2866,103.8013]
     },
     {
@@ -28,7 +28,7 @@
         "abbrev":"Farrer Park Hospital",
         "address": "1, #02-01 Farrer Park Station Rd, Connexion, 217562",
         "hotline": "+65 6363 1818",
-        "NumberBed": 1000,
+        "NumberBed": 220,
         "coordinates":[1.3131,103.8542]
     },
     {
@@ -44,31 +44,31 @@
         "abbrev":"KKH",
         "address": "Bukit Timah Rd, 100, Singapore 229899",
         "hotline": "+65 6225 5554",
-        "NumberBed": 1000,
+        "NumberBed": 830,
         "coordinates":[1.318,103.7064]
     },
     {
         "name":"Khoo Teck Puat Hospital",
         "abbrev":"KTPH",
-        "address": "5 Lower Kent Ridge Road Singapore 119074",
-        "hotline": "+65 6779 5555",
-        "NumberBed": 830,
+        "address": "90 Yishun Central, Singapore 768828",
+        "hotline": "+65 6555 8000",
+        "NumberBed":  761,
         "coordinates":[1.3108,103.8469]
     },
     {
         "name":"Mount Elizabeth Hospital",
         "abbrev":"MEH",
-        "address": "5 Lower Kent Ridge Road Singapore 119074",
+        "address": "3 Mount Elizabeth, Singapore 228510",
         "hotline": "+65 6779 5555",
-        "NumberBed": 1000,
+        "NumberBed": 345,
         "coordinates":[1.3056,103.8355]
     },
     {
         "name":"Mount Elizabeth Novena Hospital",
         "abbrev":"MENH",
-        "address": "3 Mount Elizabeth, Singapore 228510",
-        "hotline": "+65 6737 2666",
-        "NumberBed": 345,
+        "address": "38 Irrawaddy Rd, Singapore 329563",
+        "hotline": "+65 6898 6898",
+        "NumberBed": 333,
         "coordinates":[1.3045,103.835083]
     },
     {

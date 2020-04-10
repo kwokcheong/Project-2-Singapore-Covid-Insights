@@ -1,6 +1,11 @@
 function createMap(container, initialCoordinates, zoomLevel) {
+  let maxBounds = [
+    [1.190848, 103.569690],
+    [1.491992, 104.055178]
+  ]
   let map = L.map(container); // create leaflet map and store the resultant object inside the map variable
   map.setView(initialCoordinates, zoomLevel);
+  map.setMaxBounds(maxBounds);
 
   let layer = L.tileLayer(
     "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",

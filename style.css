@@ -102,7 +102,7 @@ section img{
     display: block;
     border-radius: 50%;
     cursor: pointer;
-    animation: pulse 3s infinite;
+    animation: pulse 2.5s infinite;
     background-color: rgba(247, 0, 0, 0.233);
 }
 
