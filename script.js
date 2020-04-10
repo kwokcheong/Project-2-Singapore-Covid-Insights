@@ -15,11 +15,9 @@ let female = 0;
 let ageArray = [0, 0, 0, 0, 0];
 
 //date data
-let monthCount = [0, 0, 0, 0]
-let monthRate = [0, 0, 0, 0]
+let weekRate = [0, 0, 0, 0]
 let weekCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let arr1 = [];
-let q1=0,q2=0,q3=0,q4=0;
 
 // Map Leaflet
 let map = createMap("map", [1.3521, 103.8198], 13);
@@ -64,19 +62,25 @@ axios.get('covidData.csv').then(function (response) {
             }
           }
         }
-        console.log(weekCount)
+        //console.log(weekCount)
 
         //now find cumulative sum
 
-        for (let i = 1; i < monthCount.length; i++) {
-            monthCount[i] = monthCount[i] + monthCount[i - 1];
+        for (let i = 1; i < weekCount.length; i++) {
+            weekRate[i] = weekCount[i] + weekCount[i - 1];
         }
+        console.log(weekRate)
 
-
-        for (let i = 1; i < monthCount.length; i++) {
-            monthRate[i] = ((monthCount[i] - monthCount[i - 1]) / monthCount[i - 1]);
+        for (let i = 1; i < weekRate.length; i++) {
+            if (weekRate[i]!=0){
+                if (weekRate[i-1] == 0){
+                    weekRate[i] = 0.001;
+                } else{
+                    weekRate[i] = ((weekCount[i] - weekCount[i - 1]) / weekCount[i - 1]);
+            }
         }
-
+    }
+        console.log(weekRate)
 
 
     });
@@ -190,8 +194,8 @@ axios.get('covidData.csv').then(function (response) {
 function drawCharts() {
     // todo: draw your charts
 
-    var ctx = document.getElementById('myChart');
-    var myChart = new Chart(ctx, {
+    let ctx = document.getElementById('myChart');
+    let myChart = new Chart(ctx, {
         type: 'horizontalBar',
         data: {
             labels: hospitalarray,
@@ -210,7 +214,10 @@ function drawCharts() {
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)'
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
@@ -218,7 +225,14 @@ function drawCharts() {
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
                     'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
                 ],
                 borderWidth: 1
             }]
@@ -226,6 +240,11 @@ function drawCharts() {
         options: {
             reponsive: true,
             maintainAspectRatio: false,
+            title:{
+                display: true,
+                text: 'Number of COVID-19 Patients in Each Hospital',
+                fontSize: 20,
+            },
             scales: {
                 yAxes: [{
                     ticks: {
@@ -236,14 +255,14 @@ function drawCharts() {
         }
     });
 
-    var ctx2 = document.getElementById('myBar');
-    var myChart2 = new Chart(ctx2, {
+    let ctx2 = document.getElementById('myBar');
+    let myChart2 = new Chart(ctx2, {
         type: 'line',
         data: {
-            labels: ['JanQ1', 'JanQ2', 'JanQ3','JanQ4','FebQ1', 'FebQ2','FebQ3','FebQ4','MarQ1', 'MarQ2','MarQ3','MarQ4','AprQ1','AprQ2'],   //this should be date
+            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3','Jan_w4','Feb_w1', 'Feb_w2','Feb_w3','Feb_w4','Mar_w1', 'Mar_w2','Mar_w3','Mar_w4','Apr_w1','Apr_w2'], 
             datasets: [{
                 label: 'Case increase by Week',
-                data: weekCount,   //this should be rate 
+                data: weekCount,  
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -258,7 +277,15 @@ function drawCharts() {
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
                     'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
                 ],
                 borderWidth: 1
             }]
@@ -266,6 +293,11 @@ function drawCharts() {
         options: {
             reponsive: true,
             maintainAspectRatio: false,
+            title:{
+                display: true,
+                text: 'Increase in COVID-19 Patients by Week',
+                fontSize: 20,
+            },
             scales: {
                 yAxes: [{
                     ticks: {
@@ -277,21 +309,37 @@ function drawCharts() {
     });
 
 
-    var ctx3 = document.getElementById('myAge');
-    var myChart3 = new Chart(ctx3, {
-        type: 'polarArea',
+    let ctx3 = document.getElementById('rateIncrease');
+    let myChart3 = new Chart(ctx3, {
+        type: 'line',
         data: {
-            labels: ['Male', 'Female'],
+            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3','Jan_w4','Feb_w1', 'Feb_w2','Feb_w3','Feb_w4','Mar_w1', 'Mar_w2','Mar_w3','Mar_w4','Apr_w1','Apr_w2'], 
             datasets: [{
-                label: 'Gender',
-                data: [genderCount[0], genderCount[1]],
+                label: 'Rate of Increase by Week',
+                data: weekRate,  
                 backgroundColor: [
-                    'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(54, 162, 235, 1)',
                     'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
                 ],
                 borderWidth: 1
             }]
@@ -299,18 +347,16 @@ function drawCharts() {
         options: {
             reponsive: true,
             maintainAspectRatio: false,
-            // scales: {
-            //     yAxes: [{
-            //         ticks: {
-            //             beginAtZero: true
-            //         }
-            //     }]
-            // }
+            title:{
+                display: true,
+                text: 'Rate of Increase in COVID-19 Patients',
+                fontSize: 20,
+            },
         }
     });
 
-    var ctx4 = document.getElementById('myGender');
-    var myChart4 = new Chart(ctx4, {
+    let ctx4 = document.getElementById('AgeGroup');
+    let myChart4 = new Chart(ctx4, {
         type: 'bar',
         data: {
             labels: ['0-14', '15-24', '25-54', '54-65', '>65'],
@@ -335,8 +381,14 @@ function drawCharts() {
             }]
         },
         options: {
+            title:{
+                display: true,
+                text: 'Age Demographic',
+                fontSize: 20,
+            },
             reponsive: true,
             maintainAspectRatio: false,
+
         }
     });
 

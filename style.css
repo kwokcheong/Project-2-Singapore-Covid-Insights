@@ -22,7 +22,7 @@ section{
  }
  
 .fixed_header thead {
-background: rgb(118, 230, 127);
+background: /*rgb(118, 230, 127)*/rgba(75, 192, 192, 0.774);
 color:#fff;
 }
 
@@ -76,24 +76,25 @@ section img{
     border-radius: 40px;
 }
 
+/*Graph*/
 #chart{
     display:flex;
     flex-wrap: wrap;
-    height: 500px;
+    height: 600px;
     margin-top: 10px;
     justify-content: space-around;
 }
 
 #graph{
     display: block;
-    margin-top: 30px;
+    margin-top: 23px;
     padding: 30px;
     width: 48%;;
     /*border: 0.5px solid rgb(172, 172, 172);*/
     border-radius: 40px;
     box-shadow: 0.1px 0.1px 15px 0.1px rgb(189, 188, 188);
     text-align: center;
-    max-height: 500px;
+    max-height: 600px;
 }
 
 
