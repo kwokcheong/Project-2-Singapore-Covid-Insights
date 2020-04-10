@@ -22,7 +22,7 @@ section{
  }
  
 .fixed_header thead {
-background: /*rgb(118, 230, 127)*/rgba(75, 192, 192, 0.774);
+background: /*rgb(118, 230, 127)*/rgba(36, 230, 123, 0.87);
 color:#fff;
 }
 
@@ -117,5 +117,14 @@ section img{
     100% {
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
+  }
+  
+
+  #page-content {
+    flex: 1 0 auto;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
   }
   
