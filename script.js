@@ -244,6 +244,7 @@ function drawCharts() {
                 display: true,
                 text: 'Number of COVID-19 Patients in Each Hospital',
                 fontSize: 20,
+                fontColor: 'white'
             },
             scales: {
                 yAxes: [{
@@ -297,6 +298,7 @@ function drawCharts() {
                 display: true,
                 text: 'Increase in COVID-19 Patients by Week',
                 fontSize: 20,
+                fontColor: 'white'
             },
             scales: {
                 yAxes: [{
@@ -351,6 +353,7 @@ function drawCharts() {
                 display: true,
                 text: 'Rate of Increase in COVID-19 Patients',
                 fontSize: 20,
+                fontColor: 'white'
             },
         }
     });
@@ -385,6 +388,7 @@ function drawCharts() {
                 display: true,
                 text: 'Age Demographic',
                 fontSize: 20,
+                fontColor: 'white'
             },
             reponsive: true,
             maintainAspectRatio: false,

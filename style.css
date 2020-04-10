@@ -22,7 +22,7 @@ section{
  }
  
 .fixed_header thead {
-background: /*rgb(118, 230, 127)*/rgba(36, 230, 123, 0.87);
+background: rgb(118, 230, 127);
 color:#fff;
 }
 
@@ -47,7 +47,7 @@ background-color: #dddddd;
     height: 700px;
     width: 65%;
     border-radius: 45px;
-    box-shadow: 0.1px 0.1px 15px 0.1px rgb(189, 188, 188);
+    box-shadow: 0.1px 0.1px 15px 0.1px rgb(188, 188, 189);
 }
 
 .fa-1x {
@@ -77,17 +77,25 @@ section img{
 }
 
 /*Graph*/
+#segmentate{
+    margin-top: 30px;
+    background-color: rgb(21, 21, 54);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
 #chart{
     display:flex;
     flex-wrap: wrap;
     height: 600px;
-    margin-top: 10px;
+    margin-top: 20px;
     justify-content: space-around;
 }
 
 #graph{
     display: block;
     margin-top: 23px;
+    margin-bottom: 27px;
     padding: 30px;
     width: 48%;;
     /*border: 0.5px solid rgb(172, 172, 172);*/
@@ -121,7 +129,10 @@ section img{
   
 
   #page-content {
+    margin-top: 0;
+    background-color: rgb(21, 21, 54);
     flex: 1 0 auto;
+    
   }
   
   #sticky-footer {
