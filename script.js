@@ -81,7 +81,7 @@ axios.get('covidData.csv').then(function (response) {
                 weekRate[i] = 0.001;
                 continue;
             }else{
-                weekRate[i] = (culweekCount[i] - culweekCount[i-1]) / culweekCount[i-1];
+                weekRate[i] = ((culweekCount[i] - culweekCount[i-1]) / culweekCount[i-1] );
         }
     }
         console.log(weekRate)
@@ -329,7 +329,7 @@ function drawCharts() {
     let myChart3 = new Chart(ctx3, {
         type: 'line',
         data: {
-            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3','Jan_w4','Feb_w1', 'Feb_w2','Feb_w3','Feb_w4','Mar_w1', 'Mar_w2','Mar_w3','Mar_w4','Apr_w1','Apr_w2'], 
+            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3','Jan_w4','Feb_w1', 'Feb_w2','Feb_w3','Feb_w4','Mar_w1', 'Mar_w2','Mar_w3','Mar_w4'], 
             datasets: [{
                 label: 'Rate of Increase by Week',
                 data: weekRate,  
@@ -365,7 +365,7 @@ function drawCharts() {
             maintainAspectRatio: false,
             title:{
                 display: true,
-                text: 'Rate of Increase in COVID-19 Patients',
+                text: 'Rate of Transmission in COVID-19 Singapore',
                 fontSize: 24,
                 fontColor: 'grey'
             },
