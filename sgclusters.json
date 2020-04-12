@@ -38,5 +38,61 @@
     {
         "name":"WIZLEARN TECHNOLOGIES",
         "coordinates":[1.288329,103.779633]
+    },
+    {
+        "name":"55 Sungei Kadut Loop",
+        "coordinates":[1.4096733,103.7432553]
+    },
+    {
+        "name":"31 Sungei Kadut Avenue",
+        "coordinates":[1.4075522,103.7530688]
+    },
+    {
+        "name":"Cochrane Lodge II",
+        "coordinates":[1.4614117,103.81586]
+    },
+    {
+        "name":"Cochrane Lodge I",
+        "coordinates":[1.4598333,103.8179113]
+    },
+    {
+        "name":"Toh Guan Dormitory",
+        "coordinates":[1.3376166,103.7516801]
+    },
+    {
+        "name":"Project Glory construction site",
+        "coordinates":[1.3644499,103.7182262]
+    },
+    {
+        "name":"S11 Dormitory @ Punggol",
+        "coordinates":[1.4164954,103.8931693]
+    },
+    {
+        "name":"Shaw Lodge",
+        "coordinates":[1.3371377,103.8819521]
+    },
+    {
+        "name":"Westlite Woodlands",
+        "coordinates":[1.4615452,103.8073201]
+    },
+    {
+        "name":"North Coast Lodge",
+        "coordinates":[1.456109,103.7851597]
+    },
+    {
+        "name":"Kranji Lodge",
+        "coordinates":[1.4316759,103.7576651]
+    },
+    {
+        "name":"Tampines Dormitory",
+        "coordinates":[1.3669751,103.9285936]
+    },
+    {
+        "name":"Mustafa Centre",
+        "coordinates":[1.3098447,103.8534119]
+    },
+    {
+        "name":"Cassia @ Penjuru",
+        "coordinates":[1.3179842,103.7297688]
     }
 ]

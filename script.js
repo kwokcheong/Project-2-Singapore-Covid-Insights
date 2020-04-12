@@ -15,7 +15,8 @@ let female = 0;
 let ageArray = [0, 0, 0, 0, 0];
 
 //date data
-let weekRate = [0, 0, 0, 0]
+let weekRate = [];
+let culweekCount = [];
 let weekCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let arr1 = [];
 
@@ -62,25 +63,30 @@ axios.get('covidData.csv').then(function (response) {
             }
           }
         }
-        //console.log(weekCount)
+        console.log("WeeklyCount:")
+        console.log(weekCount) //weekcount is ok
 
-        //now find cumulative sum
-
-        for (let i = 1; i < weekCount.length; i++) {
-            weekRate[i] = weekCount[i] + weekCount[i - 1];
+        let counter = 0;
+        for (let i=1; i<=weekCount.length; i++){
+            counter = counter + weekCount[i-1];
+            culweekCount.push(counter);
+            weekRate.push(counter);
         }
+        //console.log(culweekCount)
+        console.log("Cumulative increase:")
         console.log(weekRate)
-
-        for (let i = 1; i < weekRate.length; i++) {
-            if (weekRate[i]!=0){
-                if (weekRate[i-1] == 0){
-                    weekRate[i] = 0.001;
-                } else{
-                    weekRate[i] = ((weekCount[i] - weekCount[i - 1]) / weekCount[i - 1]);
-            }
+       
+        for (let i=1; i<weekRate.length ; i++){
+            if (culweekCount[i-1]==0){
+                weekRate[i] = 0.001;
+                continue;
+            }else{
+                weekRate[i] = (culweekCount[i] - culweekCount[i-1]) / culweekCount[i-1];
         }
     }
         console.log(weekRate)
+
+
 
 
     });
@@ -243,8 +249,8 @@ function drawCharts() {
             title:{
                 display: true,
                 text: 'Number of COVID-19 Patients in Each Hospital',
-                fontSize: 20,
-                fontColor: 'white'
+                fontSize: 24,
+                fontColor: 'grey'
             },
             scales: {
                 yAxes: [{
@@ -258,7 +264,7 @@ function drawCharts() {
 
     let ctx2 = document.getElementById('myBar');
     let myChart2 = new Chart(ctx2, {
-        type: 'line',
+        type: 'bar',
         data: {
             labels: ['Jan_w1', 'Jan_w2', 'Jan_w3','Jan_w4','Feb_w1', 'Feb_w2','Feb_w3','Feb_w4','Mar_w1', 'Mar_w2','Mar_w3','Mar_w4','Apr_w1','Apr_w2'], 
             datasets: [{
@@ -270,23 +276,31 @@ function drawCharts() {
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)'
+                    'rgba(255, 99, 132)',
+                    'rgba(54, 162, 235)',
+                    'rgba(255, 206, 86)',
+                    'rgba(75, 192, 192)',
+                    'rgba(153, 102, 255)',
+                    'rgba(255, 159, 64)',
+                    'rgba(255, 99, 132)',
+                    'rgba(54, 162, 235)',
+                    'rgba(255, 206, 86)',
+                    'rgba(75, 192, 192)',
+                    'rgba(153, 102, 255)',
+                    'rgba(255, 99, 132)',
+                    'rgba(54, 162, 235)',
+                    'rgba(255, 206, 86)'
                 ],
                 borderWidth: 1
             }]
@@ -297,8 +311,8 @@ function drawCharts() {
             title:{
                 display: true,
                 text: 'Increase in COVID-19 Patients by Week',
-                fontSize: 20,
-                fontColor: 'white'
+                fontSize: 24,
+                fontColor: 'grey'
             },
             scales: {
                 yAxes: [{
@@ -352,15 +366,15 @@ function drawCharts() {
             title:{
                 display: true,
                 text: 'Rate of Increase in COVID-19 Patients',
-                fontSize: 20,
-                fontColor: 'white'
+                fontSize: 24,
+                fontColor: 'grey'
             },
         }
     });
 
     let ctx4 = document.getElementById('AgeGroup');
     let myChart4 = new Chart(ctx4, {
-        type: 'bar',
+        type: 'pie',
         data: {
             labels: ['0-14', '15-24', '25-54', '54-65', '>65'],
             datasets: [{
@@ -380,15 +394,15 @@ function drawCharts() {
                     'rgba(75, 192, 192, 1)',
                     'rgba(153, 102, 255, 1)'
                 ],
-                borderWidth: 1
+                borderWidth: 1.1
             }]
         },
         options: {
             title:{
                 display: true,
                 text: 'Age Demographic',
-                fontSize: 20,
-                fontColor: 'white'
+                fontSize: 24,
+                fontColor: 'grey'
             },
             reponsive: true,
             maintainAspectRatio: false,
