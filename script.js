@@ -17,7 +17,7 @@ let ageArray = [0, 0, 0, 0, 0];
 //date data
 let weekRate = [];
 let culweekCount = [];
-let weekCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let weekCount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let arr1 = [];
 
 // Map Leaflet
@@ -41,53 +41,45 @@ axios.get('covidData.csv').then(function (response) {
         }
 
         for (let i = 0; i < arr1.length; i++) {
-            for (let j=0; j<12; j++){
-            if (arr1[i][0] == j+1) {
-                //Q1
-                if (arr1[i][1] >0 && arr1[i][1]<= 7 ) {
-                    weekCount[0 + (4*j)]++;
+            for (let j = 0; j < 12; j++) {
+                if (arr1[i][0] == j + 1) {
+                    //Q1
+                    if (arr1[i][1] > 0 && arr1[i][1] <= 7) {
+                        weekCount[0 + (4 * j)]++;
+                    }
+                    //Q2
+                    else if (arr1[i][1] > 7 && arr1[i][1] <= 14) {
+                        weekCount[1 + (4 * j)]++;
+                    }
+                    //Q3
+                    else if (arr1[i][1] > 14 && arr1[i][1] <= 21) {
+                        weekCount[2 + (4 * j)]++;
+                    }
+                    //Q4
+                    else if (arr1[i][1] > 21 && arr1[i][1] <= 31) {
+                        weekCount[3 + (4 * j)]++;
+                    }
+
                 }
-                //Q2
-                else if (arr1[i][1] >7 && arr1[i][1]<= 14) {
-                    weekCount[1 + (4*j)]++;
-                }
-                //Q3
-                else if (arr1[i][1] >14 && arr1[i][1]<= 21) {
-                    weekCount[2 + (4*j)]++;
-                }
-                //Q4
-                else if (arr1[i][1] >21 && arr1[i][1]<= 31) {
-                    weekCount[3 + (4*j)]++;
-                }
-                
             }
-          }
         }
-        console.log("WeeklyCount:")
-        console.log(weekCount) //weekcount is ok
 
         let counter = 0;
-        for (let i=1; i<=weekCount.length; i++){
-            counter = counter + weekCount[i-1];
+        for (let i = 1; i <= weekCount.length; i++) {
+            counter = counter + weekCount[i - 1];
             culweekCount.push(counter);
             weekRate.push(counter);
         }
         //console.log(culweekCount)
-        console.log("Cumulative increase:")
-        console.log(weekRate)
-       
-        for (let i=1; i<weekRate.length ; i++){
-            if (culweekCount[i-1]==0){
+
+        for (let i = 1; i < weekRate.length; i++) {
+            if (culweekCount[i - 1] == 0) {
                 weekRate[i] = 0.001;
                 continue;
-            }else{
-                weekRate[i] = ((culweekCount[i] - culweekCount[i-1]) / culweekCount[i-1] );
+            } else {
+                weekRate[i] = ((culweekCount[i] - culweekCount[i - 1]) / culweekCount[i - 1]);
+            }
         }
-    }
-        console.log(weekRate)
-
-
-
 
     });
 });
@@ -246,7 +238,7 @@ function drawCharts() {
         options: {
             reponsive: true,
             maintainAspectRatio: false,
-            title:{
+            title: {
                 display: true,
                 text: 'Number of COVID-19 Patients in Each Hospital',
                 fontSize: 24,
@@ -266,10 +258,10 @@ function drawCharts() {
     let myChart2 = new Chart(ctx2, {
         type: 'bar',
         data: {
-            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3','Jan_w4','Feb_w1', 'Feb_w2','Feb_w3','Feb_w4','Mar_w1', 'Mar_w2','Mar_w3','Mar_w4','Apr_w1','Apr_w2'], 
+            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3', 'Jan_w4', 'Feb_w1', 'Feb_w2', 'Feb_w3', 'Feb_w4', 'Mar_w1', 'Mar_w2', 'Mar_w3', 'Mar_w4', 'Apr_w1', 'Apr_w2'],
             datasets: [{
                 label: 'Case increase by Week',
-                data: weekCount,  
+                data: weekCount,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -308,7 +300,7 @@ function drawCharts() {
         options: {
             reponsive: true,
             maintainAspectRatio: false,
-            title:{
+            title: {
                 display: true,
                 text: 'Increase in COVID-19 Patients by Week',
                 fontSize: 24,
@@ -329,10 +321,10 @@ function drawCharts() {
     let myChart3 = new Chart(ctx3, {
         type: 'line',
         data: {
-            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3','Jan_w4','Feb_w1', 'Feb_w2','Feb_w3','Feb_w4','Mar_w1', 'Mar_w2','Mar_w3','Mar_w4'], 
+            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3', 'Jan_w4', 'Feb_w1', 'Feb_w2', 'Feb_w3', 'Feb_w4', 'Mar_w1', 'Mar_w2', 'Mar_w3', 'Mar_w4'],
             datasets: [{
                 label: 'Rate of Increase by Week',
-                data: weekRate,  
+                data: weekRate,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -363,7 +355,7 @@ function drawCharts() {
         options: {
             reponsive: true,
             maintainAspectRatio: false,
-            title:{
+            title: {
                 display: true,
                 text: 'Rate of Transmission in COVID-19 Singapore',
                 fontSize: 24,
@@ -398,7 +390,7 @@ function drawCharts() {
             }]
         },
         options: {
-            title:{
+            title: {
                 display: true,
                 text: 'Age Demographic',
                 fontSize: 24,
