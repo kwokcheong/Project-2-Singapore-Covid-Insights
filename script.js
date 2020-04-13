@@ -68,19 +68,34 @@ axios.get('covidData.csv').then(function (response) {
         for (let i = 1; i <= weekCount.length; i++) {
             counter = counter + weekCount[i - 1];
             culweekCount.push(counter);
-            weekRate.push(counter);
+            // weekRate.push(counter);
         }
-        //console.log(culweekCount)
+        console.log("Cumulative Week Count: ")
+        console.log(culweekCount)
 
-        for (let i = 1; i < weekRate.length; i++) {
-            if (culweekCount[i - 1] == 0) {
-                weekRate[i] = 0.001;
-                continue;
-            } else {
-                weekRate[i] = ((culweekCount[i] - culweekCount[i - 1]) / culweekCount[i - 1]);
+        // for (let i = 1; i < weekRate.length; i++) {
+        //     if (culweekCount[i - 1] == 0) {
+        //         weekRate[i] = 0.001;
+        //         continue;
+        //     } else {
+        //         weekRate[i] = ((culweekCount[i] - culweekCount[i - 1]) / culweekCount[i - 1]);
+        //     }
+        // }
+
+        for (let i=0; i<culweekCount.length; i++){
+            if (culweekCount[i] == 0){
+                weekRate.push(0);
+            } else if(culweekCount[i]>0 && culweekCount[i-1]==0){
+                weekRate.push(0);
+            }else {
+                let rate = ((culweekCount[i] - culweekCount[i-1]) / culweekCount[i-1]) * 100;
+                weekRate.push(rate);
             }
         }
-
+        console.log("Weekly count: ")
+        console.log(weekCount)
+        console.log("Weekly rate of increase: ")
+        console.log(weekRate)
     });
 });
 
@@ -321,7 +336,7 @@ function drawCharts() {
     let myChart3 = new Chart(ctx3, {
         type: 'line',
         data: {
-            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3', 'Jan_w4', 'Feb_w1', 'Feb_w2', 'Feb_w3', 'Feb_w4', 'Mar_w1', 'Mar_w2', 'Mar_w3', 'Mar_w4'],
+            labels: ['Jan_w1', 'Jan_w2', 'Jan_w3', 'Jan_w4', 'Feb_w1', 'Feb_w2', 'Feb_w3', 'Feb_w4', 'Mar_w1', 'Mar_w2', 'Mar_w3', 'Mar_w4','Apr_w1','Apr_w2'],
             datasets: [{
                 label: 'Rate of Increase by Week',
                 data: weekRate,
