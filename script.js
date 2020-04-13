@@ -81,6 +81,9 @@ axios.get('covidData.csv').then(function (response) {
                 weekRate.push(0);
             }else {
                 let rate = ((culweekCount[i] - culweekCount[i-1]) / culweekCount[i-1]) * 100;
+                if (rate >= 100){
+                    rate -=100;
+                }
                 weekRate.push(rate);
             }
         }
