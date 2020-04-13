@@ -73,14 +73,6 @@ axios.get('covidData.csv').then(function (response) {
         console.log("Cumulative Week Count: ")
         console.log(culweekCount)
 
-        // for (let i = 1; i < weekRate.length; i++) {
-        //     if (culweekCount[i - 1] == 0) {
-        //         weekRate[i] = 0.001;
-        //         continue;
-        //     } else {
-        //         weekRate[i] = ((culweekCount[i] - culweekCount[i - 1]) / culweekCount[i - 1]);
-        //     }
-        // }
 
         for (let i=0; i<culweekCount.length; i++){
             if (culweekCount[i] == 0){
