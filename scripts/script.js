@@ -94,8 +94,6 @@ axios.get('data/covidData.csv').then(function (response) {
 axios.get('data/covidData.csv').then(function (response) {
     csv().fromString(response.data).then(function (data) {
 
-        //console.table(data);
-
         //hospital case count
         for (let i in data) {
             hospitalDict[data[i].Hospital] = hospitalDict[data[i].Hospital] + 1;
@@ -150,7 +148,7 @@ function drawMap() {
     axios.get('data/sghospitals.json').then(function (hospitals) {
         let hospitalGroup = L.layerGroup();
         for (let hospital of hospitals.data) {
-            let marker = L.marker(hospital.coordinates).bindPopup(`
+            let marker = L.marker(hospital.coordinates, {icon: HospitalIcon}).bindPopup(`
         <h5>${hospital.name}</h5>
         <p> COVID-19 Patients: ${hospitalDict[hospital.abbrev]} </p>
         <p> Number of Beds: ${parseInt(hospital.NumberBed)}</p>
@@ -169,6 +167,14 @@ function drawMap() {
         })
     });
 
+        // changing from default icon
+        let icon = L.Icon.extend({
+            options: {
+                iconSize: [30, 30]
+            }
+        });
+    
+        let HospitalIcon = new icon({ iconUrl: 'https://icons.iconarchive.com/icons/google/noto-emoji-travel-places/512/42491-hospital-icon.png' }),
 
     PulsatingMarker = function (radius, color) {
         const circlestyle = `
@@ -206,6 +212,9 @@ function drawMap() {
 });
 
 }
+
+
+
 
 
 
