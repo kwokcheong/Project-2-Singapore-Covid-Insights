@@ -1,0 +1,197 @@
+body{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*table*/
+
+#table_view{
+    width: 35%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    display: flex;
+    font-family: arial, sans-serif;
+}
+.fixed_header thead tr {
+    display: block;
+ }
+ 
+.fixed_header thead {
+background: rgb(118, 230, 127);
+color:#fff;
+}
+
+.fixed_header tbody{
+    display: block;
+    width:100%;
+    overflow: auto;
+    height: 665px;
+}
+  
+.fixed_header th, .fixed_header td {
+    padding: 5px;
+    text-align: left;
+    width: 110px;
+  }
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+#map{
+    height: 700px;
+    width: 65%;
+    border-radius: 45px;
+    box-shadow: 0.1px 0.1px 15px 0.1px rgb(188, 188, 189);
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+
+.navbar-brand img{
+    height: 80px;
+    width: auto;
+}
+
+section img{
+    margin-left: 20px;
+    border-radius: 40px;
+}
+
+/*Graph*/
+#segmentate{
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    flex-wrap: wrap;
+}
+
+.chart{
+    display:flex;
+    flex-wrap: wrap;
+    height: 700px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.chart div{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0.1px 0.1px 15px 0.1px rgb(189, 188, 188);
+    text-align: center;
+    max-height: 650px;
+    max-width: 700px;
+    width: 100%;
+}
+
+
+/* Create Map pulser class which we will add to cicle*/
+.pulse {
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulse 2.5s infinite;
+    background-color: rgba(247, 0, 0, 0.233);
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0;
+    }
+    70% {
+        box-shadow: 0 0 0 13px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
+
+  #page-content {
+    margin-top: 0;
+    background-color: rgb(255, 255, 255);
+    flex: 1 0 auto;
+  }
+
+/*Button*/
+#hospitalimg{
+    height: 30px;
+}
+#clusterimg {
+    height: 40px;
+}
+
+
+/*RESPONSIVE*/
+
+/* Smaller laptop */
+@media (max-width: 1400px){
+    .navbar-brand img{
+        height: 60px;
+        width: auto;
+    }
+    #tableview{
+        display:none;
+    }
+    #map{
+        height: 700px;
+        width: 100%;
+        border-radius: 45px;
+        box-shadow: 0.1px 0.1px 15px 0.1px rgb(188, 188, 189);
+    }
+}
+
+  
+/* Tablet */
+@media (max-width: 906px){
+    .navbar-brand img{
+        height: 60px;
+        width: auto;
+    }
+    #tableview{
+        display:none;
+    }
+    #map{
+        height: 700px;
+        width: 100%;
+        border-radius: 45px;
+        box-shadow: 0.1px 0.1px 15px 0.1px rgb(188, 188, 189);
+    }
+}
+
+
+/* Phone */
+@media (max-width: 425px){
+    .navbar-brand img{
+        height: 50px;
+        width: auto;
+    }
+    nav h2{
+        display: none;
+    }
+    #tableview{
+        font-size: 10;
+    }
+    #map{
+        height: 400px;
+        width: 100%;
+        box-shadow: 0.1px 0.1px 15px 0.1px rgb(188, 188, 189);
+    }
+}

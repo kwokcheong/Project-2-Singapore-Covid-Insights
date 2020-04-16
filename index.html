@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Project 2</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/3.2.1/dc.min.css"
     integrity="sha256-uq/xxnkXyjSgp47vyRtSvBEwWuxTFbtxbKwOxkmWIJM=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -13,20 +12,20 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
+  <!-- leaflet cluster -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+  <title>Covid-19 Singapore Healthcare Dashboard</title>
 </head>
 
 <body>
   <!--Navbar-->
   <nav class="navbar navbar-light light-blue lighten-4">
-    <a class="navbar-brand" href="#"><img src="sghosp.png"></img></a>
+    <a class="navbar-brand" href="#"><img src="images/sghosp.png" alt="logo"></a>
     <h2> COVID-19 Infographic </h2>
-    <form class="form-inline md-form mr-auto mb-2">
-      <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-warning btn-rounded btn-sm my-0" type="submit">Search</button> -->
-    </form>
+    <form class="form-inline md-form mr-auto mb-2"></form>
     <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
       aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button>
@@ -62,47 +61,49 @@
     </div>
   </section>
 
+  <div class="container mt-2 ml-5"> 
+    <img id="hospitalimg" src="hospitalicon.png"/><button class="btn btn1" id="hospital">Toggle Hospitals </button>
+    <img id="clusterimg" src="redcluster.png"/><button class="btn btn1" id="cluster">Toggle Clusters </button>
+  </div>
+
   <a id="mydata"></a>
   <!-- Graph -->
-
   <div id="segmentate">
-    <section id="chart">
-      <div id="graph">
+    <div class="chart">
+      <div>
         <canvas id="myChart"></canvas>
       </div>
-      <div id="graph">
+      <div>
         <canvas id="myBar"></canvas>
       </div>
-    </section>
-    <section id="chart">
-      <div id="graph">
+    </div>
+    <div class="chart">
+      <div>
         <canvas id="rateIncrease"></canvas>
       </div>
-      <div id="graph">
+      <div>
         <canvas id="AgeGroup"></canvas>
       </div>
-    </section>
-
+    </div>
   </div>
 
 
-  <body class="d-flex flex-column">
-    <div id="page-content">
-      <div class="container text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-            <h1 class="font-weight-light mt-4 text-white"></h1>
-            <p class="lead text-white-50"></p>
-          </div>
+
+  <div id="page-content">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <h1 class="font-weight-light mt-4 text-white"></h1>
+          <p class="lead text-white-50"></p>
         </div>
       </div>
     </div>
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-      <div class="container text-center">
-        <small>Copyright &copy; Wong Kwok Cheong | All Rights Reserved | For Educational Purposes </small>
-      </div>
-    </footer>
-  </body>
+  </div>
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Wong Kwok Cheong | All Rights Reserved | For Educational Purposes </small>
+    </div>
+  </footer>
 
 
 
@@ -113,7 +114,7 @@
   <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
   <!-- use folders, cdn is slower -->
   <!-- axios -->
-  <script src="axios.js"></script>
+  <script src="scripts/axios.js"></script>
   <!-- Chart.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <!-- d3 first then cf -->
@@ -139,8 +140,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script src="my-map.js"></script>
-  <script src="script.js"></script>
+  <script src="scripts/my-map.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
