@@ -25,8 +25,9 @@ let arr1 = [];
 let map = createMap("map", [1.3521, 103.8198], 13);
 
 $(function(){
+
 //Set up hospital Dictionary
-axios.get('../data/sghospitals.json').then(function (hospitals) {
+axios.get('data/sghospitals.json').then(function (hospitals) {
     for (let hospital of hospitals.data) {
         hospitalarray.push(hospital.abbrev);
         hospitalDict[hospital.abbrev] = 0;
@@ -34,7 +35,7 @@ axios.get('../data/sghospitals.json').then(function (hospitals) {
 });
 
 //Set up Date 
-axios.get('../data/covidData.csv').then(function (response) {
+axios.get('data/covidData.csv').then(function (response) {
     csv().fromString(response.data).then(function (data) {
         for (let i = 0; i < data.length; i++) {
             arr1.push(data[i].Date.split('/'));
@@ -90,7 +91,7 @@ axios.get('../data/covidData.csv').then(function (response) {
 
 // 2. Update hospital array and dictionary counter and print table out
 
-axios.get('../data/covidData.csv').then(function (response) {
+axios.get('data/covidData.csv').then(function (response) {
     csv().fromString(response.data).then(function (data) {
 
         //console.table(data);
@@ -146,7 +147,7 @@ axios.get('../data/covidData.csv').then(function (response) {
 
 //Function DrawMap() To be called back once data loaded
 function drawMap() {
-    axios.get('../data/sghospitals.json').then(function (hospitals) {
+    axios.get('data/sghospitals.json').then(function (hospitals) {
         let hospitalGroup = L.layerGroup();
         for (let hospital of hospitals.data) {
             let marker = L.marker(hospital.coordinates).bindPopup(`
@@ -185,7 +186,7 @@ function drawMap() {
 
     pulsatingIcon = PulsatingMarker(40, 'rgba(247, 0, 0, 0.533)');
 
-    axios.get('../data/sgclusters.json').then(function (clusters) {
+    axios.get('data/sgclusters.json').then(function (clusters) {
         let clusterGroup = L.layerGroup();
         for (let cluster of clusters.data) {
             let circle = L.marker(cluster.coordinates, { icon: pulsatingIcon }
