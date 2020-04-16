@@ -1,3 +1,4 @@
+
 //Hospital data 
 let hospitalarray = [];
 let hospitalCount = [0];
@@ -23,8 +24,8 @@ let arr1 = [];
 // Map Leaflet
 let map = createMap("map", [1.3521, 103.8198], 13);
 
+$(function(){
 //Set up hospital Dictionary
-function getdata(){
 axios.get('../data/sghospitals.json').then(function (hospitals) {
     for (let hospital of hospitals.data) {
         hospitalarray.push(hospital.abbrev);
@@ -139,9 +140,8 @@ axios.get('../data/covidData.csv').then(function (response) {
     });
 
 });
-}
 
-getdata();
+});
 
 
 //Function DrawMap() To be called back once data loaded
