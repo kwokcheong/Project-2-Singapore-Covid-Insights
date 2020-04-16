@@ -133,7 +133,7 @@ axios.get('data/covidData.csv').then(function (response) {
         }
         genderCount[0] = male;
         genderCount[1] = female;
-        // todo: callback function
+
         drawCharts();
         drawMap();
     });
@@ -174,7 +174,7 @@ function drawMap() {
             }
         });
     
-        let HospitalIcon = new icon({ iconUrl: 'https://icons.iconarchive.com/icons/google/noto-emoji-travel-places/512/42491-hospital-icon.png' }),
+        let HospitalIcon = new icon({ iconUrl: 'images/hospitalicon.png' }),
 
     PulsatingMarker = function (radius, color) {
         const circlestyle = `
