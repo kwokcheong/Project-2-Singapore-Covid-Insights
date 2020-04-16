@@ -23,8 +23,8 @@ let arr1 = [];
 // Map Leaflet
 let map = createMap("map", [1.3521, 103.8198], 13);
 
-
 //Set up hospital Dictionary
+function getdata(){
 axios.get('../data/sghospitals.json').then(function (hospitals) {
     for (let hospital of hospitals.data) {
         hospitalarray.push(hospital.abbrev);
@@ -85,6 +85,63 @@ axios.get('../data/covidData.csv').then(function (response) {
         }
     });
 });
+
+
+// 2. Update hospital array and dictionary counter and print table out
+
+axios.get('../data/covidData.csv').then(function (response) {
+    csv().fromString(response.data).then(function (data) {
+
+        //console.table(data);
+
+        //hospital case count
+        for (let i in data) {
+            hospitalDict[data[i].Hospital] = hospitalDict[data[i].Hospital] + 1;
+
+            //gender count
+            if (data[i].Gender === 'M') {
+                male = male + 1;
+            } else if (data[i].Gender === "F") {
+                female = female + 1;
+            }
+
+            //age count
+            if (data[i].Age >= 0 && data[i].Age <= 14) {
+                ageArray[0] += 1;
+            } else if (data[i].Age >= 15 && data[i].Age <= 24) {
+                ageArray[1] += 1;
+            } else if (data[i].Age >= 25 && data[i].Age <= 54) {
+                ageArray[2] += 1;
+            } else if (data[i].Age >= 55 && data[i].Age <= 64) {
+                ageArray[3] += 1;
+            } else {
+                ageArray[4] += 1;
+            }
+
+
+            $("#cases").append(`
+            <tr> 
+             <td>${data[i].Cases} </td>
+             <td>${data[i].Age} </td>
+             <td>${data[i].Gender}</td>
+             <td>${data[i].Hospital} </td>
+            </tr>
+        `)
+        }
+        for (let x in hospitalarray) {
+            hospitalCount[x] = hospitalDict[hospitalarray[x]];
+        }
+        genderCount[0] = male;
+        genderCount[1] = female;
+        // todo: callback function
+        drawCharts();
+        drawMap();
+    });
+
+});
+}
+
+getdata();
 
 
 //Function DrawMap() To be called back once data loaded
@@ -150,61 +207,6 @@ function drawMap() {
 }
 
 
-
-
-
-// 2. Update hospital array and dictionary counter and print table out
-
-axios.get('../data/covidData.csv').then(function (response) {
-    csv().fromString(response.data).then(function (data) {
-
-        //console.table(data);
-
-        //hospital case count
-        for (let i in data) {
-            hospitalDict[data[i].Hospital] = hospitalDict[data[i].Hospital] + 1;
-
-            //gender count
-            if (data[i].Gender === 'M') {
-                male = male + 1;
-            } else if (data[i].Gender === "F") {
-                female = female + 1;
-            }
-
-            //age count
-            if (data[i].Age >= 0 && data[i].Age <= 14) {
-                ageArray[0] += 1;
-            } else if (data[i].Age >= 15 && data[i].Age <= 24) {
-                ageArray[1] += 1;
-            } else if (data[i].Age >= 25 && data[i].Age <= 54) {
-                ageArray[2] += 1;
-            } else if (data[i].Age >= 55 && data[i].Age <= 64) {
-                ageArray[3] += 1;
-            } else {
-                ageArray[4] += 1;
-            }
-
-
-            $("#cases").append(`
-            <tr> 
-             <td>${data[i].Cases} </td>
-             <td>${data[i].Age} </td>
-             <td>${data[i].Gender}</td>
-             <td>${data[i].Hospital} </td>
-            </tr>
-        `)
-        }
-        for (let x in hospitalarray) {
-            hospitalCount[x] = hospitalDict[hospitalarray[x]];
-        }
-        genderCount[0] = male;
-        genderCount[1] = female;
-        // todo: callback function
-        drawCharts();
-        drawMap();
-    });
-
-});
 
 
 // 3. Chart.js
