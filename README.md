@@ -80,7 +80,7 @@ To ensure compatibility and responsiveness, the site was tested across multiple 
 
 
 # Deployment
-This site can be viewed [here](https://kwokcheong.github.io/Project-2-Singapore-Covid-Insights/). This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+This site can be viewed [here](https://github.com/kwokcheong/Project-2-Singapore-Covid-Insights.git). This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
 To run locally, you can clone this repository directly into the editor of your choice by pasting git clone git@github.com:kwokcheong/Project-2-Singapore-Covid-Insights.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
