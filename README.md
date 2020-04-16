@@ -1,10 +1,10 @@
 <img src="images/screenshot.png" style="margin: 0;">
 
 
-#COVID 19 Infographic - Singapore
+# COVID 19 Infographic - Singapore
 This is an interactive infographic website, aimed towards providing viewers with a visualization on the raw dataset provided on the Singapore government website on recent COVID-19 cases. The website contains various elements that informs viewers on the situation in Singapore - ``` Affected areas/clusters, Location of hospitals, Details on each cases and the rate of transmission. ```
 
-Project Purpose: Given how rapid cases grow, data on the cases were disseminated sparesly and viewer's intepretation of the data could differ without proper context. For instance, an increase in cases by 300 does not mean National University Hospital is running out of beds and overwhelmed. Or on the third week of March, a higher number of new cases might not indicate growing rate of transmission, it could turn out to be a slowing rate of increase, which is a positive implication.
+Project Purpose: Given how rapid cases grow, data on the newly reported cases were disseminated sparesly and viewer's intepretation of the data could differ without proper context. For instance, an increase in cases by 300 does not mean National University Hospital is running out of beds and overwhelmed. Another example of judgement without context is that on the third week of March, a higher number of new cases might not indicate growing rate of transmission, it could turn out to be a slowing rate of increase, which is a positive implication.
 
 Hence, my motivation for this project is to shed light on the implications of the new data shared on the Government website, so as to provide users with a holistic view on the situation being reported.
 
@@ -13,7 +13,8 @@ A live demo of the website can be accessed here:
 https://kwokcheong.github.io/Project-2-Singapore-Covid-Insights/
 
 ## UX
-```These are tough times, and my heart goes out to all healthcare workers at the front lines.``` 
+> These are tough times, and my heart goes out to all healthcare workers at the front lines.
+
 My goal is to visualize how our current healthcare resources are holding up against the rising COVID-19 cases in Singapore and to present it to viewers through the use of an interactive map, bar chart, line and pie chart. Starting with a leaflet map at the header, viewers will have direct access to the hospital information by clicking on the icon on the map to reveal the desired information they are looking for. Cluster zones are also demarcated to reveal the proximity to viewer's location. Both of which can be toggled on/off depending on the objectives of the viewer. 
 
 Users can scroll down to see the graphical information derived from the government dataset. Alternatively they can click on the [Nav] hamburger icon -> data to shortcut to the graph anchor. I adopted a white and red color palatte to the website as it represents the cleaniness of hospital facilities, which also happens to coincide with Singapore's country flag colors. I segregated the information into seperate containers, giving each a generous amount of space and space between one another for ease of reading.
