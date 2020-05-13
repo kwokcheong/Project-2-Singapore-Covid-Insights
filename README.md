@@ -78,6 +78,9 @@ All links have been tested to ensure correct re-direction to desired destination
 
 To ensure compatibility and responsiveness, the site was tested across multiple browsers such as Chrome, Safari and Internet Explorer and on iOS devices - iPhone Xs Max, iPad and iPad Pro.
 
+## Interesting Bugs found
+1. Graph requires reload if width is reduced using computer window, else they would bunch up. 
+
 
 # Deployment
 This site can be viewed [here](https://github.com/kwokcheong/Project-2-Singapore-Covid-Insights.git). This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
